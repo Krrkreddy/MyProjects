@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ContactsApp.Contact>
+
+@{
+    ViewBag.Title = "My Contacts";
+}
+
+<h2 class="text-center">My Contacts</h2>
+
+<p>
+    @Html.ActionLink("Add Contacts", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactEmail)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactEmail)
+        </td>
+    </tr>
+}
+
+</table>
