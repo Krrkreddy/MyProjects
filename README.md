@@ -5,7 +5,7 @@ Assignment is developed in Microsoft Visual Studio. so, to run the Assignment yo
 In SQL database of your choice, run below SQL query to create required db tables in SQL server managaement studio.
 
 
-<<start of query. copy from next line>>
+<start of query. copy from next line>
 
 /****** Object:  Table [dbo].[Contacts] ******/ 
 SET ANSI_NULLS ON
@@ -40,7 +40,7 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 
-<<end of query. Copy until previous line>>
+<end of query. Copy until previous line>
 
 
 1. Download and Extract the zip file and navigate to the folder ContactsApp .
